@@ -16,10 +16,6 @@ print("R2 Score:", r2_score(y_test, y_pred))
 area = float(input("Enter square footage: "))
 bedrooms = int(input("Enter bedrooms: "))
 bathrooms = int(input("Enter bathrooms: "))
-
 new_house = np.array([[area, bedrooms, bathrooms]])
-
-# Predict price
 predicted_price = model.predict(new_house)
-
 print("Predicted House Price: $", round(predicted_price[0], 2))
